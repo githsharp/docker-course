@@ -1,13 +1,13 @@
-import express from 'express';
+import express from "express";
 
 const app = express();
 
 // Create a dynamic variable...
-let pageTitle = 'Välkommen till Oss';
+let pageTitle = "Välkommen till Oss!";
 
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.send(`
     <!DOCTYPE html>
       <html lang="en">
@@ -42,4 +42,4 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.listen(80, console.log('Server is running'));
+app.listen(80, console.log("Server is running"));

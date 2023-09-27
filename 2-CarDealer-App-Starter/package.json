@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michael Gustavsson",
+  "author": "Michael Gustavsson + Helena Sveding",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"

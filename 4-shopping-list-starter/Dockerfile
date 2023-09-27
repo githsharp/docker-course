@@ -7,7 +7,36 @@ COPY package.json .
 RUN npm install
 
 COPY . .
+# går att skicka in argument när jag bygger för att sätta en env variabel
+ARG DEFAULT_PORT=80
 
-EXPOSE 80
+# nu skapar vi en dynamisk port
+ENV PORT=$DEFAULT_PORT
+
+# nu skapar vi en dynamisk port
+
+# nu skapar vi en dynamisk port
+#ENV PORT=80
+
+EXPOSE $PORT
+
+# VOLUME ["/app/groceries"]
 
 CMD [ "node", "server.js" ]
+
+
+
+# FROM node:18
+
+# WORKDIR /app
+
+# COPY package.json .
+
+# RUN npm install
+
+# COPY . .
+
+# EXPOSE 80
+
+# CMD [ "node", "server.js" ]
+

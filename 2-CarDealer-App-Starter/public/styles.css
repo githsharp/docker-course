@@ -72,11 +72,7 @@ textarea {
   font-weight: 400;
 }
 
-.page-title {
-  text-align: center;
-  color: #5f9ea0;
-  padding: 2rem 0 3rem 0;
-}
+.page-title {   text-align: center;   color: #fff;   padding: 2rem 0 3rem 0; }
 
 .text-primary {
   color: cadetblue;

@@ -32,4 +32,6 @@ app.post('/add', (req, res) => {
     });
 });
 
-app.listen(80);
+
+//app.listen(80);
+app.listen(process.env.PORT);
