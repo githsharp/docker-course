@@ -11,6 +11,9 @@ COPY . .
 EXPOSE 80
 
 # detta är en anonym volym
-#VOLUME { "app/groceries"}
+# VOLUME { "app/groceries"}
+
+# detta tar med node modules från hosten
+# VOLUME {"/app/node_modules"}
 
 CMD [ "node", "server.js" ]
