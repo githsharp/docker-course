@@ -46,6 +46,7 @@ app.post("/add", (req, res) => {
 });
 
 // lyssnar på port 80
-app.listen(80);
+//app.listen(80);
+//
 // Raden nedan hör ihop med varianten i DockerfileLEKTION
-//app.listen(process.env.PORT);
+app.listen(process.env.PORT);

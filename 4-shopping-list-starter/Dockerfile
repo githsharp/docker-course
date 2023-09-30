@@ -8,7 +8,16 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
+# de två raderna har nu skapat en dynamisk variabel
+# detta är en miljövariabel 
+
+ENV PORT=80
+
+# detta är en port som ska exponeras
+EXPOSE $PORT
+
+
+# EXPOSE 80
 
 # detta är en anonym volym
 # VOLUME { "app/groceries"}
