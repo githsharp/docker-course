@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-MovieFlix-api", "11-MovieFlix-api.csproj", "{379DE93C-3EB1-4C24-9D8D-11CD0A39877A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{379DE93C-3EB1-4C24-9D8D-11CD0A39877A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379DE93C-3EB1-4C24-9D8D-11CD0A39877A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379DE93C-3EB1-4C24-9D8D-11CD0A39877A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379DE93C-3EB1-4C24-9D8D-11CD0A39877A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12A8D3E7-F2D6-45EC-97C2-950839B43694}
+	EndGlobalSection
+EndGlobal
