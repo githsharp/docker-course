@@ -58,32 +58,36 @@ app.post("/favorites", async (req, res) => {
   }
 });
 
+// för att testa appen låt endast app.listen(80) vara kvar
+// FÖR ATT TESTA APPEN LÅT ENDAST APP.LISTEN(80) VARA KVAR
+//
 //app.listen(80);
 
-// MG provade en kombo (av #2 och #3 nedan)
-mongoose
-  //.connect("mongodb://127.0.0.1:27017/movies")
-  .connect("mongodb://localhost:27017/movies")
-  .then(app.listen(80))
-  .catch((err) => console.error(err));
-//.connect("mongodb://localhost:27017/movies")
+// localhost:27017 är default port för mongodb
+// vi byter den till host.docker.internal:27017
 //.connect("mongodb://host.docker.internal:27017/movies")
+// kommandot säger 
+// 1)  koppla upp mot Mongodb-ligger på den här IP-adressen(som vi hittat via "docker inspect mongodb") 
+// 2) starta upp servern
+
+mongoose
+  //.connect("mongodb://172.17.0.2:27017/movies")
+  .connect("mongodb://mongodb:27017/movies")
+  .then(() => {
+    console.log("Mongodb connected and the server is up and running");
+    app.listen(80);
+  })
+  .catch((err) => console.error(err));
+
+// MG provade en kombo (av #2 och #3 nedan)
+// mongoose
+//   .connect("mongodb://localhost:27017/movies")
+//   .then(app.listen(8000))
+//   .catch((err) => console.error(err));
+//
 //.connect("mongodb://172.17.0.3:27017/movies")
-//.connect("mongodb://loal:27017/movies")
 //.then(() => {
 //  console.log("Mongodb connected and the server is up and running");
 // app.listen(80);
 //})
 //.catch((err) => console.error(err));
-
-// De 4 raderna nedanför fungerade utmärkt men testar att föja MGs exempel
-//
-
-// De här raderna används senare för att koppla ihop med mongodb
-//
-// .connect('mongodb://host.docker.internal:27017/movies')
-// .then (() => {
-//   console.log('Mongodb connected and the server is up and running');
-//   app.listen(80);
-// })
-// .catch((err) => console.error(err));
