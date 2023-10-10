@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieFlix</title>
+    <link rel="stylesheet" href="~/css/colors.css" />
+    <link rel="stylesheet" href="~/css/utilities.css" />
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/navbar.css"/>
+</head>
+<body>
+     <header>
+      <div class="container">
+        <div class="logo">MovieFlix</div>
+        <nav>
+          <ul>
+            <li><a href="/Home">Filmer</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="app-root" class="container">
+        <h2>Populära filmer</h2>
+        <div id="top-movies" class="grid">
+          @RenderBody()
+        </div>
+      </section>
+    </main>    
+</body>
+</html>
