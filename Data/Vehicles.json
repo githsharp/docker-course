@@ -1,0 +1,30 @@
+[
+    {
+        "registrationNumber": "ABC123",
+        "manufacturer": "Chevrolet",
+        "model": "Corvette",
+        "modelYear": 2015,
+        "mileage": 25000
+    },
+    {
+        "registrationNumber": "DEF345",
+        "manufacturer": "Ford",
+        "model": "Mustang",
+        "modelYear": 2017,
+        "mileage": 48500
+    },
+    {
+        "registrationNumber": "GHI678",
+        "manufacturer": "Porsche",
+        "model": "Alpine",
+        "modelYear": 1967,
+        "mileage": 89000
+    },
+    {
+        "registrationNumber": "JKL901",
+        "manufacturer": "Mercedes",
+        "model": "S500",
+        "modelYear": 2019,
+        "mileage": 25000
+    }
+]
